@@ -1,0 +1,10 @@
+[Unit]
+Description=Organ
+Requires=
+After=sound.target
+[Service]
+Type=simple
+ExecStart=/root/piano/venv/bin/python /root/piano/code/test2.py
+KillSignal=SIGINT
+[Install]
+WantedBy=default.target
